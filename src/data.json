@@ -1,4 +1,11 @@
 {
+  "shared":
+    {
+      "logo":"./assets/shared/logo.svg",
+      "close":"./assets/shared/icon-close.svg",
+      "hamburger":"./assets/shared/icon-hamburger.svg"
+    }
+  ,
   "destinations": [
     {
       "name": "Moon",

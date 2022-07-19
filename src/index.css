@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+
+*{
+  font-family: 'Bellefair', serif;
+}
+
+ul{
+  list-style:none;
+}
+
+.home{
+background-image: url("/public/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* tablet */
+@media(max-width:966px){
+  .home{
+    background-image: url('/public/assets/home/background-home-tablet.jpg');
+  }
+}
+
+
+/* mobile */
+@media(max-width:500px){
+  .home{
+    background-image: url('/public/assets/home/background-home-mobile.jpg');
+  }
+}
