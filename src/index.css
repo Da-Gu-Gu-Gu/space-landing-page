@@ -18,6 +18,27 @@ background-image: url("/public/assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
 }
 
+.explore::before{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  border-radius: 50%;
+ 
+  background: white;
+  stroke:#979797;
+  transition: all 0.2s ease-in-out;
+}
+
+.explore:hover::before{
+  width:130%;
+  height: 130%;
+}
+
 
 /* tablet */
 @media(max-width:966px){

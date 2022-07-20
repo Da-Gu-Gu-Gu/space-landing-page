@@ -6,23 +6,23 @@ console.log("aa", data);
 
 const Navbar = () => {
   return (
-    <div className="w-screen h-[136px]   pl-10 mx-auto flex justify-between items-center">
+    <div className="w-screen xl:h-[136px] h-[100px]   pl-10 mx-auto flex justify-between items-center">
       <img
         src={`${data.shared.logo}`}
         alt="logo"
-        className="w-[48px] h-[48px]"
+        className="xl:w-[48px] xl:h-[48px] w-[30px] h-[30px]"
       />
-      <ul className="flex bg-white/[0.4] h-[96px] items-center text-[16px] tracking-widest ">
-        <li className="ml-[100px] text-center text-white hover:text-lb hover:border-lb  border-b-2 h-[96px] leading-[96px]">
+      <ul className="flex bg-white/[0.4] xl:h-[96px] h-[50px]  items-center text-[16px] tracking-widest ">
+        <li className="ml-[100px] text-center text-white hover:text-lb hover:border-lb  border-b-2 xl:h-[96px] xl:leading-[96px] h-[50px] leading-[50px]">
           <Link to="/">00 HOME</Link>
         </li>
-        <li className="ml-[50px] text-center text-white hover:text-lb hover:border-lb  hover:border-b-2 h-[96px] leading-[96px]">
+        <li className="ml-[50px] text-center text-white hover:text-lb hover:border-lb  hover:border-b-2 xl:h-[96px] xl:leading-[96px] h-[50px] leading-[50px]">
           <Link to="/">01 DESTINATION</Link>
         </li>
-        <li className="ml-[50px] text-center text-white hover:text-lb hover:border-lb  border-b-2 h-[96px] leading-[96px]">
+        <li className="ml-[50px] text-center text-white hover:text-lb hover:border-lb  border-b-2 xl:h-[96px] xl:leading-[96px] h-[50px] leading-[50px]">
           <Link to="/">02 CREW</Link>
         </li>
-        <li className="ml-[50px] mr-[150px] text-center text-white hover:text-lb hover:border-lb  border-b-2 h-[96px] leading-[96px]">
+        <li className="ml-[50px] mr-[150px] text-center text-white hover:text-lb hover:border-lb  border-b-2 xl:h-[96px] xl:leading-[96px] h-[50px] leading-[50px]">
           <Link to="/">03 TECHNOLOGY</Link>
         </li>
       </ul>
