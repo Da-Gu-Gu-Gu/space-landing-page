@@ -2,23 +2,25 @@ import React from "react";
 
 const HomeContent = () => {
   return (
-    <div className="flex w-4/5  mx-auto  p-[50px] mb-[50px] fixed bottom-0  left-1/2 -translate-x-1/2">
-      <div className="first w-1/2 ">
+    <div className="flex w-4/5  flex-col h-[90%]  lg:flex-row mx-auto p-[30px] lg:p-[50px] lg:mb-[50px] lg:fixed lg:bottom-0  lg:left-1/2 lg:-translate-x-1/2">
+      <div className="first lg:w-1/2 w-full  h-1/2 lg:h-full flex flex-col  justify-end   text-center lg:text-left">
         <p className="tracking-widest text-[28px] text-lb">
           SO, YOU WANT TO TRAVEL TO
         </p>
         <h1 className="text-white text-[150px]">SPACE</h1>
-        <p className="text-lb max-w-[444px]">
+        <p className="text-lb max-w-[444px] w-full  mx-auto lg:mx-0">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
       </div>
-      <div className="second relative  w-1/2 ">
-        <div className="w-[250px] explore h-[250px] absolute bottom-0 right-0  rounded-full bg-white flex items-center justify-center">
+
+      <div className="second  relative w-full lg:w-1/2  h-1/2 lg:h-full ">
+        <div className="lg:w-[250px] cursor-pointer w-[150px] h-[150px] md:w-[242px] md:h-[242px] explore lg:h-[250px] absolute bottom-1/2 right-1/2 lg:bottom-0 lg:right-0 translate-y-1/2 lg:translate-y-0  translate-x-1/2 lg:translate-x-0 rounded-full bg-white flex items-center justify-center">
           <p className="text-[32px] ">EXPLORE </p>
         </div>
+        <div className="lg:w-[250px] hoverbg scale-1 cursor-pointer w-[150px] h-[150px] md:w-[242px] md:h-[242px] explore lg:h-[250px] absolute bottom-1/2 right-1/2 lg:bottom-0 lg:right-0 translate-y-1/2 lg:translate-y-0  translate-x-1/2 lg:translate-x-0 rounded-full bg-white flex items-center justify-center"></div>
       </div>
     </div>
   );
