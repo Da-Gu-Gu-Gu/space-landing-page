@@ -36,8 +36,8 @@ const Navbar = () => {
             HOME
           </Link>
         </li>
-        <li className="lg:ml-[50px] barlow text-[14px] text-left md:text-center text-white hover:text-lb hover:border-lb md:pl-0 md:pr-0  grow pl-10 hover:border-b-2 xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
-          <Link to="/">
+        <li className="lg:ml-[50px] barlow cursor-pointer text-[14px] text-left md:text-center text-white hover:text-lb hover:border-lb md:pl-0 md:pr-0  grow pl-10 hover:border-b-2 xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
+          <Link to="/destination">
             {" "}
             <span className="inline md:hidden lg:inline font-bold barlow">
               01
