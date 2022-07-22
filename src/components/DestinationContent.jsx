@@ -3,10 +3,10 @@ import data from "../data.json";
 
 const DestinationContent = () => {
   return (
-    <div className="flex w-4/5  pb-[20px] h-[90%]  flex-col md:h-[80%]   lg:flex-row mx-auto md:p-[30px] lg:p-[50px] lg:mb-[50px] lg:fixed lg:bottom-0  lg:left-1/2 lg:-translate-x-1/2">
+    <div className="flex w-4/5  pb-[20px] h-[90%]   flex-col md:h-[80%]   lg:flex-row mx-auto md:p-[30px] lg:p-[50px] lg:mb-[50px] lg:fixed lg:bottom-0  lg:left-1/2 lg:-translate-x-1/2">
       <div className="first flex flex-col justify-evenly md:justify-between lg:w-1/2 w-full  h-1/2 lg:h-full ">
-        <p className="barlow md:mb-7 text-[16px] text-center md:text-left md:text-[20px] lg:text-[28px] tracking-widest text-white">
-          <span className="barlow tracking-widest mr-6 text-[#24262F] font-bold">
+        <p className="barlow md:mb-7 text-[16px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[28px] tracking-widest text-white">
+          <span className="barlow tracking-widest mr-6 text-white/20 font-bold">
             01
           </span>
           PICK YOUR DESTIANTION
