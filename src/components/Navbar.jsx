@@ -53,15 +53,15 @@ const Navbar = () => {
             CREW
           </li>
         </Link>
-        <li className="lg:ml-[50px] lg:mr-[150px] barlow text-[14px] text-left md:text-center text-white hover:text-lb md:pl-0 md:pr-0  grow pl-10  hover:border-lb  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
-          <Link to="/">
+        <Link to="/technology">
+          <li className="lg:ml-[50px] lg:mr-[150px] barlow text-[14px] text-left md:text-center text-white hover:text-lb md:pl-0 md:pr-0  grow pl-10  hover:border-lb  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
             {" "}
             <span className="inline md:hidden lg:inline font-bold barlow">
               03
             </span>{" "}
             TECHNOLOGY
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
 
       <img
