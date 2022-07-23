@@ -50,7 +50,7 @@ const CrewContent = () => {
             <h1 className="text-[24px] md:text-[40px] lg:text-[45px] xl:text-[56px] uppercase py-5">
               {data.crew[0].name}
             </h1>
-            <p className="barlow mx-auto lg:mx-0 w-full md:w-[444px] tracking-widest text-[14px] md:text-[15px] lg:text-[18px] text-lb">
+            <p className="barlow  mx-auto lg:mx-0 w-full md:w-[444px] tracking-widest text-[14px] md:text-[15px] lg:text-[18px] text-lb">
               {data.crew[0].bio}
             </p>
           </div>

@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import data from "../data.json";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <div className="w-screen  xl:h-[136px] h-[100px]   pl-10 mx-auto flex justify-between items-center">
@@ -28,7 +32,13 @@ const Navbar = () => {
           />
         </li>
         <Link to="/">
-          <li className="lg:ml-[100px] barlow text-[14px] lg:text-[16px] text-left md:text-center text-white hover:text-lb hover:border-lb border-r-4 md:pl-0 md:pr-0  grow pl-10  md:border-b-4 md:border-r-0 xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px] md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
+          <li
+            className={`${
+              pathname === "/"
+                ? "border-r-4  md:border-b-4 md:border-r-0"
+                : "hover:text-lb hover:border-lb md:hover:border-b-2"
+            } lg:ml-[100px] barlow text-[14px] lg:text-[16px] text-left md:text-center text-white  md:pl-0 md:pr-0  grow pl-10   xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px] md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]`}
+          >
             <span className="inline md:hidden lg:inline font-bold barlow">
               00
             </span>{" "}
@@ -36,7 +46,13 @@ const Navbar = () => {
           </li>
         </Link>
         <Link to="/destination">
-          <li className="lg:ml-[50px] barlow cursor-pointer text-[14px] text-left md:text-center text-white hover:text-lb hover:border-lb md:pl-0 md:pr-0  grow pl-10 hover:border-b-2 xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
+          <li
+            className={`${
+              pathname === "/destination"
+                ? "border-r-4  md:border-b-4 md:border-r-0"
+                : "hover:text-lb hover:border-lb md:hover:border-b-2"
+            }   lg:ml-[50px] barlow cursor-pointer text-[14px] text-left md:text-center text-white md:pl-0 md:pr-0  grow pl-10  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]`}
+          >
             {" "}
             <span className="inline md:hidden lg:inline font-bold barlow">
               01
@@ -45,7 +61,13 @@ const Navbar = () => {
           </li>
         </Link>
         <Link to="/crew">
-          <li className="lg:ml-[50px] barlow text-[14px] text-left md:text-center text-white hover:text-lb hover:border-lb md:pl-0 md:pr-0  grow pl-10  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
+          <li
+            className={`${
+              pathname === "/crew"
+                ? "border-r-4  md:border-b-4 md:border-r-0"
+                : "hover:text-lb hover:border-lb md:hover:border-b-2"
+            } first:last:lg:ml-[50px] barlow text-[14px] text-left md:text-center text-white md:pl-0 md:pr-0  grow pl-10  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]`}
+          >
             {" "}
             <span className="inline md:hidden lg:inline font-bold barlow">
               02
@@ -54,7 +76,13 @@ const Navbar = () => {
           </li>
         </Link>
         <Link to="/technology">
-          <li className="lg:ml-[50px] lg:mr-[150px] barlow text-[14px] text-left md:text-center text-white hover:text-lb md:pl-0 md:pr-0  grow pl-10  hover:border-lb  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]">
+          <li
+            className={`${
+              pathname === "/technology"
+                ? "border-r-4  md:border-b-4 md:border-r-0"
+                : "hover:text-lb hover:border-lb md:hover:border-b-2"
+            } lg:ml-[50px] lg:mr-[150px] barlow text-[14px] text-left md:text-center text-white  md:pl-0 md:pr-0  grow pl-10  xl:h-[96px] xl:leading-[96px] lg:h-[60px] lg:leading-[60px]  md:h-[100px] md:leading-[100px] h-[50px] leading-[50px]`}
+          >
             {" "}
             <span className="inline md:hidden lg:inline font-bold barlow">
               03
