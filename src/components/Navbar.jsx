@@ -11,11 +11,13 @@ const Navbar = () => {
 
   return (
     <div className="w-screen  xl:h-[136px] h-[100px]   pl-10 mx-auto flex justify-between items-center">
-      <img
-        src={`${data.shared.logo}`}
-        alt="logo"
-        className="md:w-[48px] md:h-[48px]  w-[40px] h-[40px]"
-      />
+      <Link to="/">
+        <img
+          src={`${data.shared.logo}`}
+          alt="logo"
+          className="md:w-[48px] md:h-[48px]  w-[40px] h-[40px]"
+        />
+      </Link>
       <ul
         className={`md:flex ${
           !open && "close"

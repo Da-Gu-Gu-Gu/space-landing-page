@@ -17,7 +17,20 @@ const CrewContent = () => {
         <span className="barlow tracking-widest mr-6 text-white/20 font-bold">
           02
         </span>
-        MEET YOUR CREW
+        <span className="barlow c-label">M</span>
+        <span className="barlow c-label">E</span>
+        <span className="barlow c-label">E</span>
+        <span className="barlow c-label">T</span>
+        <span> </span>
+        <span className="barlow c-label">Y</span>
+        <span className="barlow c-label">O</span>
+        <span className="barlow c-label">U</span>
+        <span className="barlow c-label">R</span>
+        <span> </span>
+        <span className="barlow c-label">C</span>
+        <span className="barlow c-label">R</span>
+        <span className="barlow c-label">E</span>
+        <span className="barlow c-label">W</span>
       </p>
 
       <Swiper
