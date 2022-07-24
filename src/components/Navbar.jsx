@@ -7,7 +7,6 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="w-screen  xl:h-[136px] h-[100px]   pl-10 mx-auto flex justify-between items-center">
@@ -15,7 +14,7 @@ const Navbar = () => {
         <img
           src={`${data.shared.logo}`}
           alt="logo"
-          className="md:w-[48px] md:h-[48px]  w-[40px] h-[40px]"
+          className="logo md:w-[48px] md:h-[48px]  w-[40px] h-[40px]"
         />
       </Link>
       <ul

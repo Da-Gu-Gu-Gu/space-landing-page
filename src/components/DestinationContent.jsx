@@ -1,7 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import gsap from "gsap";
 import data from "../data.json";
 
-const DestinationContent = ({ destinationIndex, setdestinationIndex }) => {
+const destinationcontentAnimation = () => {
+  gsap.fromTo(
+    ".d-img",
+    {
+      rotate: -360,
+      // repeat: -1,
+      // yoyo: true,
+    },
+    {
+      rotate: 360,
+      repeat: -1,
+      duration: 10,
+      ease: "sine.inOut",
+      yoyo: true,
+    }
+  );
+
+  gsap.fromTo(
+    ".d-text",
+    {
+      y: 30,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      stagger: 0.3,
+    }
+  );
+};
+
+const DestinationContent = () => {
+  const [destinationIndex, setdestinationIndex] = useState(0);
+
+  useEffect(() => {
+    destinationcontentAnimation();
+  }, [destinationIndex]);
+
   return (
     <div className="flex w-4/5  pb-[20px] h-[90%]   flex-col md:h-[80%]   lg:flex-row mx-auto md:p-[30px] lg:p-[50px] lg:mb-[50px] lg:fixed lg:bottom-0  lg:left-1/2 lg:-translate-x-1/2">
       <div className="first flex flex-col justify-evenly md:justify-between lg:w-1/2 w-full  h-1/2 lg:h-full ">
@@ -31,7 +69,7 @@ const DestinationContent = ({ destinationIndex, setdestinationIndex }) => {
           <span className="barlow d-label">O</span>
           <span className="barlow d-label">N</span>
         </p>
-        <div className="w-[170px] h-[170px] md:w-[300px] md:h-[300px] mx-auto lg:mx-0 lg:w-[350px] lg:h-[350px] xl:w[445px] xl:h-[445px]">
+        <div className="w-[170px] mt-5 lg:mt-0 h-[170px] md:w-[300px] md:h-[300px] mx-auto lg:mx-0 lg:w-[350px] lg:h-[350px] xl:w[445px] xl:h-[445px]">
           <img
             src={data.destinations[destinationIndex].images.webp}
             alt="moon"
@@ -40,7 +78,7 @@ const DestinationContent = ({ destinationIndex, setdestinationIndex }) => {
         </div>
       </div>
 
-      <div className="second text-center pb-[20px] lg:text-left md:pt-[30px] lg:pt-[60px] relative w-full lg:w-1/2  h-1/2 lg:h-full ">
+      <div className="second mt-10 mb-5 lg:my-0 text-center pb-[20px] lg:text-left md:pt-[30px] lg:pt-[60px] relative w-full lg:w-1/2  h-1/2 lg:h-full ">
         <ul className="flex barlow  mx-auto w-max lg:mx-0 tracking-widest text-white flex-wrap gap-4 md:gap-7">
           <li
             onClick={() => setdestinationIndex(0)}

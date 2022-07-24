@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import gsap from "gsap";
 import DestinationContent from "../components/DestinationContent";
@@ -16,50 +16,17 @@ const destinationAnimation = () => {
       stagger: 0.1,
     }
   );
-
-  gsap.fromTo(
-    ".d-img",
-    {
-      rotate: -360,
-      // repeat: -1,
-      // yoyo: true,
-    },
-    {
-      rotate: 360,
-      repeat: -1,
-      duration: 10,
-      ease: "sine.inOut",
-      yoyo: true,
-    }
-  );
-
-  gsap.fromTo(
-    ".d-text",
-    {
-      y: 30,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      stagger: 0.3,
-    }
-  );
 };
 
 const Destination = () => {
-  const [destinationIndex, setdestinationIndex] = useState(0);
   useEffect(() => {
     destinationAnimation();
-  }, [destinationIndex]);
+  }, []);
 
   return (
-    <div className="destination w-screen h-screen overflow-x-hidden">
+    <div className="destination w-screen h-max min-h-screen overflow-x-hidden">
       <Navbar />
-      <DestinationContent
-        destinationIndex={destinationIndex}
-        setdestinationIndex={setdestinationIndex}
-      />
+      <DestinationContent />
     </div>
   );
 };

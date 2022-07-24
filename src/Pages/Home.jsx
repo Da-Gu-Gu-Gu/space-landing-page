@@ -5,6 +5,17 @@ import Navbar from "../components/Navbar";
 
 const homeAnimation = () => {
   gsap.fromTo(
+    ".logo",
+    {
+      scale: 0,
+    },
+    {
+      scale: 1,
+      duration: 0.5,
+      stagger: 0.3,
+    }
+  );
+  gsap.fromTo(
     ".home-text",
     {
       y: 50,
@@ -13,21 +24,22 @@ const homeAnimation = () => {
     {
       y: 0,
       opacity: 1,
+      delay: 0.5,
       duration: 0.5,
       stagger: 0.3,
     }
   );
-
   gsap.fromTo(
     ".explore",
     {
-      color: "#fff",
       borderRadius: 0,
+      opacity: 0,
     },
     {
-      color: "#000",
       borderRadius: "100%",
-      duration: 1.5,
+      opacity: 1,
+      delay: 1.5,
+      duration: 1,
     }
   );
 };

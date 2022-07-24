@@ -52,7 +52,7 @@ const CrewContent = () => {
         className="w-full mySwiper h-[100%] lg:h-[87%] md:h-[100%] relative "
       >
         {/* pagination */}
-        <div className="my-pagination z-10 absolute  bottom-[45%] md:bottom-[60%] left-1/2 lg:translate-x-0 -translate-x-1/2 lg:left-0  lg:bottom-12 p-3   h-[10px] flex flex-wrap gap-5"></div>
+        <div className="my-pagination  z-10 absolute  bottom-[45%] md:bottom-[60%] left-1/2 lg:translate-x-0 -translate-x-1/2 lg:left-0  lg:bottom-12 p-3   h-[10px] flex flex-wrap gap-5"></div>
 
         {/* slide */}
         <SwiperSlide className="w-full flex flex-col lg:flex-row text-white">
